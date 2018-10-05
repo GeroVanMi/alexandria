@@ -15,6 +15,11 @@ public class View {
         this.canvas = new Canvas(900, 1080);
         gc = canvas.getGraphicsContext2D();
         this.pane = new Pane(canvas);
+        this.pane.setPrefSize(900, 1080);
         this.scene = new Scene(pane);
+    }
+
+    public Scene getScene() {
+        return scene;
     }
 }
