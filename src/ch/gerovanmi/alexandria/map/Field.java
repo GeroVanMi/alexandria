@@ -8,19 +8,17 @@ public class Field {
     private FieldType type;
     private String color;
     private int posX, posY;
-    private double width, heigth;
+
 
     private RessourceType ressourceType;
     private int ressourcesAmount;
 
     private boolean hasUnit;
 
-    public Field(FieldType type, int posX, int posY, double width, double heigth, RessourceType ressourceType, int ressourcesAmount) {
+    public Field(FieldType type, int posX, int posY, RessourceType ressourceType, int ressourcesAmount) {
         this.type = type;
         this.posX = posX;
         this.posY = posY;
-        this.width = width;
-        this.heigth = heigth;
         this.ressourceType = ressourceType;
         this.ressourcesAmount = ressourcesAmount;
         this.hasUnit = false;
@@ -34,5 +32,17 @@ public class Field {
             case FOREST: color = "darkgreen";
             break;
         }
+    }
+
+    public int getPosX() {
+        return posX;
+    }
+
+    public int getPosY() {
+        return posY;
+    }
+
+    public String getColor() {
+        return color;
     }
 }
