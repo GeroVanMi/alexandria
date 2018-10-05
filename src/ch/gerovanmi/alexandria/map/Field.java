@@ -2,6 +2,7 @@ package ch.gerovanmi.alexandria.map;
 
 
 import ch.gerovanmi.alexandria.enums.FieldType;
+import ch.gerovanmi.alexandria.enums.RessourceType;
 
 public class Field {
     private FieldType type;
@@ -9,12 +10,12 @@ public class Field {
     private int posX, posY;
     private double width, heigth;
 
-    private String ressourceType;
+    private RessourceType ressourceType;
     private int ressourcesAmount;
 
     private boolean hasUnit;
 
-    public Field(FieldType type, int posX, int posY, double width, double heigth, String ressourceType, int ressourcesAmount) {
+    public Field(FieldType type, int posX, int posY, double width, double heigth, RessourceType ressourceType, int ressourcesAmount) {
         this.type = type;
         this.posX = posX;
         this.posY = posY;
