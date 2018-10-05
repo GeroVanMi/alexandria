@@ -24,5 +24,15 @@ public class Field {
         this.ressourceType = ressourceType;
         this.ressourcesAmount = ressourcesAmount;
         this.hasUnit = false;
+        selectColor();
+    }
+
+    public void selectColor() {
+        switch (type) {
+            case PLAIN: color = "green";
+            break;
+            case FOREST: color = "darkgreen";
+            break;
+        }
     }
 }
