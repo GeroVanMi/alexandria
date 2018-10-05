@@ -1,4 +1,4 @@
-package ch.gerovanmi.alexandria;
+package ch.gerovanmi.alexandria.units;
 
 public abstract class Unit {
     private int posX, posY, movesPerTurn, movesLeft, healthpoints;
